@@ -6,7 +6,7 @@ int main(){
     char s2[20]="443.6";
     char s3[20]="x=10;y=20;z=35";
 
-    long int x=strtol(s1,NULL,10);
+    long int x=strtol(s1,NULL,10); //here we give 10 because in decimal we give 10
     float y=strtof(s2,NULL);
 
     cout<<x<<" "<<y<<endl;
@@ -18,3 +18,5 @@ int main(){
     }
     return 0;
 }
+
+//like a key-value pair

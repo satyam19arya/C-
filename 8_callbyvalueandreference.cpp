@@ -33,3 +33,4 @@ int main(){
 }
 
 //When we use call by reference the function automatically becomes inline
+//reference doesn't consume any memory because it's like a alias only
