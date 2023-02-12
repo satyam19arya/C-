@@ -7,12 +7,12 @@ class Rectangle{
 	int breadth;
 	
     public:
-  void setLength(int l){
-     length = l;
+    void setLength(int l){
+        length = l;
     }
 	
 	void setBreadth(int b){
-     breadth = b;
+        breadth = b;
 	}
 	
  	int getLength(){

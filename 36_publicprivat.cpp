@@ -1,5 +1,4 @@
 // C++ --> initially called --> C with classes by stroustroup
-// class --> extension of structures (in C)
 // structures had limitations
 //      - members are public
 //      - No methods

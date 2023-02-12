@@ -1,12 +1,22 @@
 //We can create a single function to work with different data types by using a template.
 #include<iostream>
 using namespace std;
+
+// int maxim(int a,int b)
+// {
+//     return a>b?a:b;
+// }
+
+// float maxim(float a,float b)
+// {
+//     return a>b?a:b;
+// }
     
 template<class T>
 T maxim(T a,T b)
-    {
-       return a>b?a:b;
-    }
+{
+    return a>b?a:b;
+}
     
 int main(){
 	cout<<maxim(12,14)<<endl;

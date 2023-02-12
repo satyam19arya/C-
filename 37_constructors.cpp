@@ -6,8 +6,8 @@ class Rectangle{
   int breadth;
   public:                // constructor can't have a return type
   Rectangle(){           //Default constructor
-      length =0;
-      breadth =0;
+      length =1;
+      breadth =1;
   }
 
   Rectangle(int l,int b){  //Parameterised constructor //With default values

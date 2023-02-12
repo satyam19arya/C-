@@ -13,3 +13,4 @@ int main(){
 	fun();	    
 }
     
+// they are like global variables but scope limited to a function
