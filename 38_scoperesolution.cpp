@@ -10,7 +10,7 @@ class Rectangle{
   Rectangle(Rectangle &r);
   void setLength(int l);
   void setBreadth(int b);
-  int getLength();
+  int getLength();    // if a function is declared inside class, it is automatically inline but here declared outside class using scope resolution so not inline
   int getBreadth();
   int area();
   bool isSquare();

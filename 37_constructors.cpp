@@ -15,7 +15,7 @@ class Rectangle{
       setBreadth(b);
   }
 
-  Rectangle(Rectangle &r){  //Copy constructor
+  Rectangle(Rectangle &r){  //Copy constructor (we take it as reference so that new rectangle should not be created)
       length=r.length;
       breadth=r.breadth;
   }
