@@ -1,6 +1,18 @@
 #include <iostream>
 using namespace std;
 
+void solve(int arr[]){
+    cout<<"Size inside function: "<<sizeof(arr)<<endl;
+}
+
+void update(int *p){
+    cout<<"Address stored inside p: "<<p<<endl;
+    cout<<"Address of p: "<<&p<<endl;
+    *p = *p + 10;
+  //*(104) = *(104) + 10
+  //*p = 5 + 10 = 15
+}
+
 int main(){
     //Pointers basics
     int a = 5;
@@ -76,5 +88,21 @@ int main(){
     // cout<<pt<<endl;
     
     //char *ch = "satyam"  //bad practice
-    return 0;     
+
+
+    //Pointers (Functions)
+    // int arr[10] = {1,2,3,4};
+    // cout<<"Size inside main function: "<<sizeof(arr)<<endl;
+    // solve(arr);   //Here the pointer name arr is passing to the function storing the address of arr and just because if we made change to the array in function, it will reflect in actual array in main so if Ex: arr[0]=50; => *(arr+0) that why it is called passed by reference
+    
+
+    // int a =5;
+    // int *ptr = &a;
+    // cout<<"Address of a: "<<&a<<endl;
+    // cout<<"Address stored inside ptr: "<<ptr<<endl;
+    // cout<<"Address of ptr: "<<&ptr<<endl;
+    // update(ptr);
+    // cout<<"Value of a: "<<a<<endl;
+
+    return 0;   
 }
