@@ -56,6 +56,5 @@ int main(){
     // cout<<arr<<endl;
     
     //dereference means uss address par jo value padi hai wo bata dho
-    
     return 0;     
 }
