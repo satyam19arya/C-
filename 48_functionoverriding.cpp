@@ -18,6 +18,8 @@ class Derived:public Base{
 int main(){
     Derived d;
     d.display();
+    Base* a = new Base();
+    a->display();
     return 0;
 }
 
