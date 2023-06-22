@@ -22,7 +22,7 @@ int main(){
    // ptr->fun2();  this function cannot be call
     return 0;
 } 
-//a pointer of one class can point to other class, but classes must be a base and derived class,then it is possible.
+//A pointer of one class can point to other class, but classes must be a base and derived class,then it is possible.
 //To access the variable of the base class, base class pointer will be used.
 //So, a pointer is type of base class, and it can access all, public function and variables of base class since pointer is of base class, this is known as binding pointer
 //In this pointer base class is owned by base class but points to derived class object.
@@ -41,18 +41,12 @@ int main(){
     
 // class AdvanceCar:public BasicCar{
 //     public:
-// 	void playmusic(){
+// 	void start(){
 // 		cout<<"Playing Music"<<endl;
 // 	}	
 // };    
 // int main(){
-// 	//BasicCar b;
-// 	//AdvanceCar *q=&b;
-// 	AdvanceCar a;
-// 	a.start();
-// 	a.playmusic();
-// 	BasicCar *ptr=&a;
-// 	ptr->start();
-// 	//ptr->playmusic(); // this function cannot be called.    
+// 	BasicCar b;
+// 	AdvanceCar *q= (AdvanceCar *)&b;
+//   q->start();   
 // }
-    
