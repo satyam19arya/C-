@@ -15,3 +15,4 @@ int main(){
 }
 
 // Preprocessors are programs that process our source code before compilation.
+// code -> preprocessing (by preprocessor) -> compile -> machine code -> execute

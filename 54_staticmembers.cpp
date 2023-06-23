@@ -1,7 +1,8 @@
+//static data member - That variable is going to share memory with all the objects of the class
+//static member function - That function is going to share memory with all the objects of the class
 //static member function can access only static data members of a class
 //static members can be access by using the object as well as class
 //static functions will not access data members of an object. They can access static members of a class.
-//static functions are called as functions of a class. Other functions are called as functions of an object.
 
 #include <iostream>
 using namespace std;
@@ -16,7 +17,8 @@ class Test{
    }
 
 };
-int Test::count=0;
+
+int Test::count=0;  //hum kisi obj t1, t2 ke count ko increment nhi kar rhe hum class ke count ko increment kar rhe (means yeah ek class ka variable hai) means uss class ke sare objects ke liye same hoga
 
 int main(){
     Test t1,t2;
