@@ -1,22 +1,23 @@
 #include <iostream>
 using namespace std;
 
-void solve(int arr[]){
-    cout<<"Size inside function: "<<sizeof(arr)<<endl;
-}
+// void solve(int arr[]){
+//     cout<<"Size inside function: "<<sizeof(arr)<<endl;
+// }
 
-void update(int *p){
-    cout<<"Address stored inside p: "<<p<<endl;
-    cout<<"Address of p: "<<&p<<endl;
-    *p = *p + 10;
-  //*(104) = *(104) + 10
-  //*p = 5 + 10 = 15
-}
+// void update(int *p){
+//     cout<<"Address stored inside p: "<<p<<endl;
+//     cout<<"Address of p: "<<&p<<endl;
+//     *p = *p + 10;
+//   //*(104) = *(104) + 10
+//   //*p = 5 + 10 = 15
+// }
 
 int main(){
     //Pointers basics
     int a = 5;
     int *ptr = &a;
+    int *q = ptr; //q is also pointing to the same location where ptr is pointing
     cout<<a<<endl;
     cout<<&a<<endl;
     cout<<ptr<<endl;
@@ -24,6 +25,7 @@ int main(){
     cout<<&ptr<<endl;
     cout<<sizeof(a)<<endl;
     cout<<sizeof(ptr)<<endl;
+    cout<<*q<<endl;
     
     a=a+1;
     cout<<a<<endl;
@@ -101,7 +103,7 @@ int main(){
     // cout<<"Address of a: "<<&a<<endl;
     // cout<<"Address stored inside ptr: "<<ptr<<endl;
     // cout<<"Address of ptr: "<<&ptr<<endl;
-    // update(ptr);
+    // update(ptr);        // int *p = ptr (copy of ptr)
     // cout<<"Value of a: "<<a<<endl;
 
     return 0;   
