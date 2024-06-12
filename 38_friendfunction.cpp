@@ -5,13 +5,16 @@ class Complex{
  int real;
  int img;
  public:
+
   Complex(int r=0,int i=0){
       real=r;
       img=i;
   }
+
   void display(){
       cout<<real<<"+i"<<img<<endl;
   }
+  
   friend Complex operator+(Complex c1,Complex c2);
 };
 

@@ -28,5 +28,3 @@ int main(){
    ptr->start();
     return 0;
 }
-
-//C++ polymorphism means that a call to a member function will cause a different function to be executed depending on the type of object that invokes the function.
