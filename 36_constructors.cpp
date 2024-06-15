@@ -9,18 +9,21 @@ private:
 public:
     // Default constructor
     Rectangle() {
+        cout << "Default constructor called " << this << endl;
         length = 1;
         breadth = 1;
     }
 
     // Parameterized constructor
     Rectangle(int l, int b) {
+        cout << "Parameterized constructor called " << this << endl;
         setLength(l);
         setBreadth(b);
     }
 
     // Copy constructor
-    Rectangle(const Rectangle &r) {  // Note the 'const' keyword to ensure r is not modified
+    Rectangle(const Rectangle &r) {
+        cout << "Copy constructor called " << this << endl;
         length = r.length;
         breadth = r.breadth;
     }
@@ -50,6 +53,10 @@ public:
     int area() {
         return length * breadth;
     }
+
+    ~Rectangle() {
+        cout << "Destructor called " << this << endl;
+    }
 };
 
 int main() {
@@ -63,3 +70,5 @@ int main() {
 
     return 0;
 }
+
+// Destructor uses stack memory, so it is called in reverse order of the constructors.

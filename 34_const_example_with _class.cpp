@@ -2,7 +2,7 @@
 using namespace std;
 
 class abc{
-    // mutable int x;  // (only for debugging purpose)
+    // mutable int x;  // mutable keyword is used to modify the value of const variable
     int x;
     int *y;
     
@@ -18,11 +18,11 @@ class abc{
     }
     
     int getX() const{
-        // x = 10;         //to make it work with const use make x mutable
+        // x = 10;       //we can't modify the value of x;
         return x;
     }
     
-    // int getY(){
+    // int getY() {
     //     int a = 28;
     //     y = &a;       //we can modify the value of pointer y;
     //     return *y;

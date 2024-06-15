@@ -20,6 +20,18 @@ int main() {
     return 0;
 }
 
-// typedef vs #define
-// #define is a pre-processor directive whereas typedef is a keyword used to give data type a new name.
-// typedef interpretation is performed by the compiler whereas #define statements are processed by the pre-processor.
+
+class MyClass {
+public:
+    void display() {
+        std::cout << "Hello from MyClass!" << std::endl;
+    }
+};
+
+typedef MyClass MC;
+
+int main() {
+    MC obj;
+    obj.display();
+    return 0;
+}
