@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-#include "64_emp.h"
+#include "65_emp.h"
 
 int main() {
     Employee e;
@@ -11,6 +11,6 @@ int main() {
     return 0;
 }
 
-//  g++ -c .\65_emp_implementation.cpp  (creates 65_emp_implementation.o)
-//  g++ .\65_emp_implementation.o .\63_header.cpp
+//  g++ -c .\66_emp_implementation.cpp  (creates 66_emp_implementation.o)
+//  g++ .\66_emp_implementation.o .\64_header.cpp
 //  .\a.exe
