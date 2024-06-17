@@ -1,33 +1,47 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
 
-class Complex{
- int real;
- int img;
- public:
+class Test {
+    private:
+        int num;
 
-  Complex(int r=0,int i=0){
-      real=r;
-      img=i;
-  }
+    public:
+        Test() {
+            this->num = 10;
+        }
 
-  void display(){
-      cout<<real<<"+i"<<img<<endl;
-  }
-  
-  friend Complex operator+(Complex c1,Complex c2);
+        Test(int num) {
+            this->num = num;
+        }
+
+        // Member function to display num1
+        void disp();
+
+        // Friend function declaration
+        friend void print();
 };
 
-int main(){
-    Complex c1(5,10),c2(3,4),c3;
-    c3=c1+c2;
-    c3.display();
-    return 0;
+void Test::disp() {
+    cout << "T0 : Num : " << this->num << endl;
 }
 
-Complex operator+(Complex c1,Complex c2){
-    Complex temp;
-    temp.real=c2.real+c1.real;
-    temp.img=c2.img+c1.img;
-    return temp;
+void print() {
+    Test t1;
+    t1.num = 600;  // Accessing private member directly
+    cout << "T1 : Num : " << t1.num << endl;
+
+    Test t2;
+    cout << "T2 : Num : " << t2.num << endl;
+
+    Test t3(40);
+    cout << "T3 : Num : " << t3.num << endl;
+}
+
+int main(void) {
+    Test t0;
+    // t0.num = 400;  // This line would cause an error because num1 is private
+    t0.disp();
+
+    print();
+    return 0;
 }
