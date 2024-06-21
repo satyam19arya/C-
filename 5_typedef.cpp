@@ -5,6 +5,7 @@ typedef struct employee {
     int eId;
     char favChar;
     float salary;
+    void accept() {} // In case of C Programming, we can't define functions inside a structure.
 } ep;
 
 int main() {
