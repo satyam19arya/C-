@@ -112,6 +112,9 @@ int main() {
     cout << strcmp(s1, s2) << endl;
     return 0;
 }
+// 0 if both strings are equal
+// -1 if the first string is less than the second string (based on ASCII values)
+// +1 if the first string is greater than the second string (based on ASCII values)
 
 // String Search
 #include <iostream>
@@ -121,7 +124,11 @@ using namespace std;
 int main() {
     char s1[20] = "Hello dddd";
     char s2[20] = "l"; // Initialize the substring to search for
-    cout << strstr(s1, s2) << endl; // Find the substring in the source string and print the result
+    char *p = strstr(s1, s2);
+    if (p == NULL)
+        cout << "Substring not found" << endl;
+    else
+        cout << "Substring found at position " << p - s1 << endl;
     return 0;
 }
 
@@ -135,6 +142,38 @@ int main() {
     char s[20] = "Hello";
     strrev(s);
     cout << s << endl;
+    return 0;
+}
+
+// strchr (Find the first occurrence of a character in a string)
+#include <iostream>
+#include <cstring>
+using namespace std;
+
+int main() {
+    char s[20] = "Hello";
+    char *p = strchr(s, 'l');
+    if (p == NULL)
+        cout << "Character not found" << endl;
+    else
+        cout << "Character found at position " << p - s << endl;
+ 
+    return 0;
+}
+
+
+// strrchr (Find the last occurrence of a character in a string)
+#include <iostream>
+#include <cstring>
+using namespace std;
+
+int main() {
+    char s[20] = "Hello";
+    char *p = strrchr(s, 'l');
+    if (p == NULL)
+        cout << "Character not found" << endl;
+    else
+        cout << "Character found at position " << p - s << endl;
     return 0;
 }
 

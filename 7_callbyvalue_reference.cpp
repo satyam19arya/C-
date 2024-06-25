@@ -31,3 +31,15 @@ int main() {
     cout << "The value of x is " << x << " and the value of y is " << y << endl; 
     return 0;
 }
+
+
+// #include <stdio.h>
+// #define SWAP(type, a, b) {type temp; temp = a; a = b; b = temp;} 
+
+// int main() {
+//     int n1 = 10, n2 = 5;
+//     printf("Before Macro Call : N1 = %d N2 = %d", n1, n2);
+//     SWAP(int, n1, n2);
+//     printf("\nAfter Macro Call : N1 = %d N2 = %d", n1, n2);
+//     return 0;
+// }
